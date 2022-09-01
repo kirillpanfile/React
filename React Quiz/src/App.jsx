@@ -4,15 +4,12 @@ import { Home, Quiz } from "./views";
 function App() {
   initServer();
   return (
-    <div className="mt-10">
-      <h1>hello world</h1>
-      <Router>
-        <Routes>
-          <Route path="/" exact element={<Home />} />
-          <Route path="/quiz/:id" element={<Quiz />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/quiz/:id" element={<Quiz />} />
+      </Routes>
+    </Router>
   );
 }
 

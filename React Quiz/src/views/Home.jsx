@@ -17,15 +17,12 @@ function Home() {
   }, []);
 
   return (
-    <h1>
-      {quiz.map((question) => {
-        return (
-          <div key={question.id}>
-            <h2>{question.question}</h2>
-          </div>
-        );
-      })}
-    </h1>
+    <div className="w-full h-screen bg-blue-50 flex items-center flex-col justify-center">
+      <h1 className="text-2xl font-black">Welocme to the Quiz App</h1>
+      <button className="bg-blue-600 text-white px-4 py-2 mt-4 rounded-lg text-lg focus:outline-1 outline-blue-300 hover:bg-slate-400">
+        Take the quiz!
+      </button>
+    </div>
   );
 }
 
